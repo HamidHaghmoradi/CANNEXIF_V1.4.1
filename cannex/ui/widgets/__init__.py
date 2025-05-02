@@ -1,0 +1,1 @@
+"""Widget components for the CANNEX user interface."""
