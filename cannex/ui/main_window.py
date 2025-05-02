@@ -17,9 +17,9 @@ from PyQt5.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QPu
                             QMessageBox, QListWidget, QListWidgetItem, QHeaderView, QTabWidget,
                             QTableWidget, QTableWidgetItem, QToolBar, QInputDialog, QFileDialog,
                             QTextEdit, QFrame, QProgressDialog, QColorDialog, QDateTimeEdit, QTreeWidget,
-                            QTreeWidgetItem, QGroupBox, QEvent)
+                            QTreeWidgetItem, QGroupBox)
 from PyQt5.QtCore import (Qt, QDateTime, QTimer, QSize, QPoint, QPointF, QPropertyAnimation,
-                         QParallelAnimationGroup, QEasingCurve, QRect, QRectF, QLineF, QRect)
+                          QParallelAnimationGroup, QEasingCurve, QRect, QRectF, QLineF, QRect, QEvent)
 from PyQt5.QtGui import (QPainter, QPen, QColor, QPixmap, QFont, QIcon, QTransform, QBrush,
                         QPainterPath, QRadialGradient)
 
