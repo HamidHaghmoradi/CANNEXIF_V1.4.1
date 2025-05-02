@@ -16,7 +16,8 @@ from PyQt5.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QPu
                             QComboBox, QSpinBox, QCheckBox, QLineEdit, QFormLayout,
                             QMessageBox, QListWidget, QListWidgetItem, QHeaderView, QTabWidget,
                             QTableWidget, QTableWidgetItem, QToolBar, QInputDialog, QFileDialog,
-                            QTextEdit, QFrame, QProgressDialog, QColorDialog, QDateTimeEdit)
+                            QTextEdit, QFrame, QProgressDialog, QColorDialog, QDateTimeEdit, QTreeWidget,
+                            QTreeWidgetItem, QGroupBox, QEvent)
 from PyQt5.QtCore import (Qt, QDateTime, QTimer, QSize, QPoint, QPointF, QPropertyAnimation,
                          QParallelAnimationGroup, QEasingCurve, QRect, QRectF, QLineF, QRect)
 from PyQt5.QtGui import (QPainter, QPen, QColor, QPixmap, QFont, QIcon, QTransform, QBrush,
@@ -1484,12 +1485,13 @@ class ExperimentWindow(QMainWindow):
     def export_logs(self):
         """Export logged data"""
         if not self.data_logger_name:
+            {
                 "driver_class": TestDriver,
                 "functions": functions,
                 "added_by": self.user_manager.current_user.username,
                 "added_date": datetime.now().isoformat()
             }
-        
+                
         # Update all buttons
         self.init_instrument_slots()
         
